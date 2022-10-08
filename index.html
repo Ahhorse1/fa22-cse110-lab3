@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="shortcut icon" href="assets/favicon.ico">
+    <title> Meeting Minutes </title>
+    <meta charset="UTF-8">
+    <meta name="description" content="Random Plane Facts">
+    <meta name="author" content="JC Yan">
+  </head>
+  <body>
+    <main>
+        <header> This is your captain speaking. </header>
+        <hr>
+        <nav>
+          <a href="https://www.boeing.com">Boeing</a>
+          <a href="https://www.airbus.com">Airbus</a>
+        </nav>
+        <hr>
+        <section name="title">
+          <div>
+            <h1> Meeting All About Planes</h1>
+            <h2> Update on Aviation Industry</h2>
+            <h3> Friday, October 7th, 2022 </h3>
+          </div>
+        </section>
+        <hr>
+        <section name="attendance">
+          
+          <details>
+            <summary><h3>Roll Call</h3></summary>
+            <ul>
+              <li>Pete <strong><span>"Maverick"</span></strong> Mitchell</li>
+              <li>Chesley <b>"Sully"</b> Sullenberger</li>
+              <li>Charles <b>"Chuck"</b> Yeager</li>
+              <li>Amelia Earhart</li>
+              <li>Charles Lindbergh</li>
+            </ul>
+          </details>
+        </section>
+        <hr>
+        <section name="agenda">
+          <h3>Agenda</h3>
+          <ol>
+            <li>Russian Aircraft</li>
+            <li>Pilot Shortage</li>
+            <li><i>JetBlue</i> and <em>Spirit</em> Merger</li>
+          </ol>
+        </section>
+        <hr>
+        <section name="comments">
+          <h3>Comments and Notes</h3>
+          <p>
+            Below is a photo of B787-9's wing showcasing its wing flex, something that automatically occurs during the flight to increase fuel efficiency.
+            <br>
+            The next is a video of a A220 taking off from Geneva International Airport (GVA).
+            <br>
+            Finally the audio is of a GE9X engine, the largest commercial engine designed for the B777x.
+          </p>
+        </section>
+        <hr>
+        <section name="pictures">
+          <img src="assets/IMG_0037.jpg" alt="B787 Wing Flex" width="300" height="400">
+          <video width="300" height="400" controls>
+            <source src="assets/IMG_1808.mp4" type="video/mp4">
+          </video>
+          <audio controls>
+            <source src="assets/The_sound_of_innovation_GE9X_Engine.mp3" type="audio/mp3">
+          </audio>
+        </section>
+        <hr>
+        <section name="forms">
+          <form>
+            <fieldset>
+              <label>Attending Next Meeting: </label>
+              <input type="radio"><br><br>
+              <label>Sign Up for Email: </label>
+              <input type="checkbox"><br><br>
+              <label> Email: </label>
+              <input type="text"><br><br>
+              <label> Date: </label>
+              <input type="date"><br><br>
+              <textarea rows="4" cols="50">Any questions, comments or concerns?</textarea><br><br>
+              <label for="manu">Favorite Airplane Manufacturer:  </label>
+              <input list="manu">
+                <datalist id="manu">
+                  <option value="Boeing">
+                  <option value="Airbus">
+                  <option value="Embraer">
+                  <option value="Bombardier">
+                </datalist>
+                <br><br>
+              <label for="quad">Favorite Quadjet:</label>
+              <select name="quad" id="quad">
+                <option value="B707">B707</option>
+                <option value="B747">B747</option>
+                <option value="A380">A380</option>
+                <option value="A340">A340</option>
+              </select>
+              <br><br>
+              <button type="button">Submit!</button>
+            </fieldset>
+          </form>
+        </section>
+        <footer> Thank you for flying with us. </footer>
+    </main>
+  </body>
+</html>
