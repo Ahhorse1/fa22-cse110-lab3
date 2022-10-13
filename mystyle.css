@@ -1,1 +1,14 @@
 /* Added A Comment! */
+/* Colors! */
+h2 {
+    color: gray;
+}
+h3 {
+    color:hsl(210, 14, 53) /* light slate grey */
+}
+b {
+    color:#ff6961 /* pastel red */
+}
+i {
+    color:rgb(0, 119, 255) /* light blue ish? */
+}
