@@ -17,9 +17,9 @@ i {
 }
 
 body {
-    background-image: url(assets/IMG_2615.jpg);
+    background-color: skyblue /* sky blue */
 }
 
 form {
-    background-color: paleturquoise;
+    background-color: paleturquoise; /* palet turquoise */
 }
