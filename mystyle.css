@@ -1,67 +1,143 @@
 /* Added A Comment! */
 
-h1 {
-    margin-top: 10px;
-    margin-bottom: 10px;
-    margin-left: auto;
-    margin-right: auto;
-    text-align: center;
-    text-decoration: blue wavy overline;
+html {
+    font-family: 'Fuzzy Bubbles', cursive;
 }
-h2 {
-    font-size: 20px;
-    color: gray;
-    margin: 0px 0px 0px 5px;
+
+/* increased font-size, centered the text and underlined it */
+h1 {
+    font-size: 30px;
     text-align: center;
+    text-decoration: underline;
+    margin-top: 0px;
+    margin-right: auto;
+    margin-bottom: 0px;
+    margin-left: auto;
+}
+
+h2 {
+    font-size: 125%;
+    color: rgb(67, 74, 71);
+    text-align: center;
+    margin: 0px auto 0px auto;
 }
 
 h3 {
-    font-size: 90%;
-    margin-left: 10px;
-    color:hsl(210, 14, 53); /* light slate grey */
+    font-size: 75%;
+    text-align: center;
     text-decoration: underline;
+    margin: 5px auto 5px auto;
 }
+
+@media screen and (min-width: 1250px) {
+    body {
+        background-color: cyan;
+    }
+}
+
 
 b {
-    color:#ff6961; /* pastel red */
-    font-size: 1.25rem;
-}
-
-p {
-    font-size: 15px;
-    padding-left: 10px;
-    padding-right: 10px;
-    padding-top: auto;
-    padding-bottom: auto;
-}
-
-strong {
-    color:navy;
-    font-size: 1.5rem;
-}
-
-i {
-    color:rgb(0, 119, 255); /* light blue ish? */
-    font-size: 17px;
-}
-
-em {
-    color:rgb(248, 244, 8);
-    font-size: 17px;
-}
-
-body {
-    background-color: skyblue;
-    border: 1px solid black;
-    padding: 10px 10px 10px 10px;
-}
-
-form {
-    background-color: paleturquoise;
+    color:red;
+    font-size: 1.1em;
 }
 
 section {
+
     border-style: solid;
-    border-color: black;
     border-width: 1px;
+    border-color: black;
+
+    display: block;
+}
+
+form {
+    display: inline-block;
+}
+
+hr {
+    border-color: lightblue;
+}
+
+button:hover {
+    color:red;
+}
+
+button:active {
+    color:yellow;
+}
+
+button {
+    color:green;
+}
+
+.box {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+
+    text-align: center;
+}
+
+.para {
+    padding: 0px 10px 0px 10px;
+}
+
+.media {
+    width: 300px;
+    height: 400px;
+}
+
+.plane-image {
+    position: absolute;
+    top: 100px; left: 40px;
+    width: 80px;
+    height: 40px;
+}
+
+.departure-image {
+    position: fixed;
+    left: 5px;
+    width: 25px;
+    height: 25px;
+}
+
+.arrival-image {
+    position: fixed;
+    left: 5px;
+    bottom: 0px;
+    width: 25px;
+    height: 25px;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    flex-flow: row wrap;
+}
+
+.container-grid {
+    display: grid;
+    grid-template-rows: [row1-start] .1fr [row1-end row2-start] .9fr [row2-end];
+    grid-template-columns: [column1-start] .5fr [column1-end column2-start] .5fr [column2-end];
+    grid-template-areas:
+    "header1 header2"
+    "body1 body2";
+}
+
+.item-a {
+    grid-area: header1;
+}
+
+.item-b {
+    grid-area: header2;
+}
+
+.item-c {
+    grid-area: body1;
+}
+
+.item-d {
+    grid-area: body2;
 }
