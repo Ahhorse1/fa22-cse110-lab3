@@ -4,6 +4,10 @@ html {
     font-family: 'Fuzzy Bubbles', cursive;
 }
 
+* {
+    color:black;
+}
+
 /* increased font-size, centered the text and underlined it */
 h1 {
     font-size: 30px;
@@ -24,6 +28,15 @@ h2 {
 
 h3 {
     font-size: 75%;
+    text-decoration: underline;
+    margin: 5px auto auto 5px;
+}
+
+/*
+    Adjacent Sibling Combinator
+*/
+h2 + h3 {
+    font-size: 75%;
     text-align: center;
     text-decoration: underline;
     margin: 5px auto 5px auto;
@@ -35,10 +48,13 @@ h3 {
     }
 }
 
-
 b {
     color:red;
     font-size: 1.1em;
+}
+
+a[href]:hover{
+    color:greenyellow;
 }
 
 section {
@@ -62,7 +78,8 @@ button:hover {
     color:red;
 }
 
-button:active {
+button:active,
+#yellow {
     color:yellow;
 }
 
@@ -82,6 +99,26 @@ button {
 .para {
     padding: 0px 10px 0px 10px;
 }
+/*
+    Descendant Combinator
+*/
+.para p {
+    font-size: 15px;
+}
+
+/*
+    Child Combinator
+*/
+ul > li {
+    text-decoration: underline;
+}
+
+/*
+    General Sibling Combinator
+*/
+i ~ li {
+    text-decoration: underline;
+} 
 
 .media {
     width: 300px;
@@ -126,12 +163,17 @@ button {
     "body1 body2";
 }
 
-.item-a {
+/*
+    Combining Two Selectors
+*/
+h3.item-a {
     grid-area: header1;
+    margin: auto;
 }
 
-.item-b {
+h3.item-b {
     grid-area: header2;
+    margin: auto;
 }
 
 .item-c {
@@ -140,4 +182,8 @@ button {
 
 .item-d {
     grid-area: body2;
+}
+
+#blue {
+    color: blue;
 }
